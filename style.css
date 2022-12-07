@@ -1,0 +1,84 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+header,
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+header img {
+    margin: auto 1rem;
+}
+
+header nav ul li {
+    list-style: none;
+    margin-right: 1rem;
+}
+
+.seccion {
+    margin-left: auto;
+    margin-right: 2rem;
+}
+
+.btn1 {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn2 {
+    background: none;
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    padding: 0.4rem 0.8rem;
+    margin-left: 2rem;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+main div {
+    width: 50%;
+    padding: 0 5rem;
+}
+
+main div img {
+    width: 100%;
+}
+
+main div h1 {
+    font-size: 5rem;
+}
+
+main div p {
+    font-size: 1rem;
+    width: 80%;
+}
+
+.btn3 {
+    background: black;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    margin-top: 3rem;
+    font-size: 1rem;
+}
+
+.imgDown {
+    display: grid;
+    grid-template-columns: 6rem 6rem 6rem 6rem;
+    column-gap: 2rem;
+    padding: 0;
+    margin-top: 6rem;
+}
