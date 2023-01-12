@@ -2,75 +2,81 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="stylesheet" href="./style.css" />
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
-
 </head>
 
 <body>
+  <!--Cabecera de la pagina-->
   <header>
-    <img src="./images/logo.svg" alt="Logo">
+    <img src="./images/logo.svg" alt="Logo" />
     <nav>
-      <ul>
-        <li>
-          Features
-          <img style="margin: 0;" src="./images/icon-arrow-up.svg" alt="arrow">
+      <ul class="colortxt">
+        <li onclick="menuDesplegable1()">
+          <span>Features</span>
+          <img style="margin: 0" src="./images/icon-arrow-up.svg" alt="arrow" />
+          <!--seccion desplegable en los menus-->
+          <div class="menuDesplegado" id="menudesplegable1">
+            <ul style="margin-left: -4.5rem;">
+              <li><img src="./images/icon-todo.svg" alt="list"> <span>Todo List</span></li>
+              <li><img src="./images/icon-calendar.svg" alt="calendar"> <span>Calendar</span></li>
+              <li><img src="./images/icon-reminders.svg" alt="reminders"> <span>Reminders</span></li>
+              <li><img src="./images/icon-planning.svg" alt="planning"> <span>Planning</span></li>
+            </ul>
+          </div>
         </li>
-        <li>
-          Company
-          <img style="margin: 0;" src="./images/icon-arrow-up.svg" alt="arrow">
+        <li onclick="menuDesplegable2()">
+          <span>Company</span>
+          <img style="margin: 0" src="./images/icon-arrow-up.svg" alt="arrow" />
+          <!--seccion desplegable en los menus-->
+          <div class="menuDesplegado" id="menudesplegable2">
+            <ul style="margin-left: 0rem;">
+              <li><span>History</span> </li>
+              <li><span>Our Team</span></li>
+              <li><span>Blog</span></li>
+            </ul>
+          </div>
         </li>
-        <li>
-          Careers
-        </li>
-        <li>
-          About
-        </li>
+        <li><span>Careers</span></li>
+        <li><span>About</span></li>
       </ul>
     </nav>
     <div class="seccion">
-      <button class="btn1">Login</button>
-      <button class="btn2">Register</button>
+      <button class="btn1 colortxt">Login</button>
+      <button class="btn2 colortxt">Register</button>
     </div>
   </header>
   <main>
     <div>
-      <h1>
-        Make remote work
-      </h1>
-      <p>
+      <h1>Make <br />remote work</h1>
+      <p class="colortxt">
         Get your team in sync, no matter your location. Streamline processes,
         create team rituals, and watch productivity soar.
       </p>
       <button class="btn3">Learn more</button>
       <div class="imgDown">
-        <img src="./images/client-databiz.svg" alt="databiz">
-        <img src="./images/client-audiophile.svg" alt="audiophile">
-        <img src="./images/client-maker.svg" alt="maker">
-        <img src="./images/client-meet.svg" alt="meet">
+        <img src="./images/client-databiz.svg" alt="databiz" />
+        <img src="./images/client-audiophile.svg" alt="audiophile" />
+        <img src="./images/client-maker.svg" alt="maker" />
+        <img src="./images/client-meet.svg" alt="meet" />
       </div>
     </div>
     <div>
-      <img src="./images/image-hero-desktop.png" alt="hero">
+      <img src="./images/image-hero-desktop.png" alt="hero" />
     </div>
   </main>
 
-
-
-
-
-
-
-
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your
+      Name Here</a>.
   </div>
+  <script src="./main.js"></script>
 </body>
 
 </html>
