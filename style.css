@@ -1,7 +1,7 @@
 .attribution {
-    font-size: 11px;
     text-align: center;
 }
+
 
 .attribution a {
     color: hsl(228, 45%, 44%);
@@ -10,25 +10,21 @@
 header,
 ul {
     display: flex;
-    flex-direction: row;margin: 1vw 0;
+    flex-direction: row;
 }
 
-header img {
-    margin: auto 1rem;
-}
 
 header nav ul li {
     list-style: none;
-    margin-right: 1rem;
 }
 
 header nav ul li span:hover {
     cursor: pointer;
-    color:  hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 8%);
 }
+
 .seccion {
     margin-left: auto;
-    margin-right: 2rem;
 }
 
 .btn1 {
@@ -38,78 +34,256 @@ header nav ul li span:hover {
 
 .btn2 {
     background: none;
-    border: 1px solid hsl(0, 0%, 41%);
-    border-radius: 0.5rem;
-    padding: 0.4rem 0.8rem;
-    margin-left: 2rem;
 }
-.seccion button:hover{
+
+.seccion button:hover {
     color: hsl(0, 0%, 8%);
     cursor: pointer;
     border-color: hsl(0, 0%, 8%);
 }
+
 main {
     display: flex;
     flex-direction: row;
 }
 
-main div {
-    width: 50%;
-    padding: 0 5rem;
-}
-
-main div img {width: 80%;
-    margin-top: 10%;
-}
-
-main div h1 {
-    font-size: 4rem;
-}
 
 main div p {
-    font-size: 1rem;
     width: 80%;
 }
 
 .btn3 {
     background: black;
     border: none;
-    border-radius: 0.5rem;
-    padding: 0.5rem 1rem;
     color: white;
-    margin-top: 3rem;
-    font-size: 1rem;
 }
-.btn3:hover{
+
+.btn3:hover {
     background-color: white;
     color: black;
     cursor: pointer;
-    outline: 1px solid black;
 }
+
 .imgDown {
     display: grid;
-    grid-template-columns: 6rem 6rem 6rem 6rem;
-    column-gap: 2rem;
-    padding: 0;
-    margin-top: 6rem;
 }
-.colortxt{
-    color:hsl(0, 0%, 41%);
+
+
+.colortxt {
+    color: hsl(0, 0%, 41%);
 }
-.menuDesplegado ul{
+
+.menuDesplegado ul {
     display: flex;
     flex-direction: column;
     position: absolute;
     background: white;
     z-index: 2;
-    border-radius: 0.5vw;
-    padding: 1.3vw 1.2vw;
-    row-gap: 0.9vw;
-    box-shadow: 0px 0px 15px -10px black;
-    margin-left: -2.5vw;
 }
-.menuDesplegado ul li img{
-    margin:0 0.35vw;
-}
+
+
 #menudesplegable1,
-#menudesplegable2{display: none;}
+#menudesplegable2 {
+    display: none;
+}
+
+
+
+@media (min-width: 320px) {
+    .attribution {
+        font-size: 1vw;
+    }
+
+    * {
+        font-size: 1.2vw;
+
+    }
+.imghero{
+    width:88vw;
+}
+    body {
+        margin: 0.5vw;
+    }
+
+    header,
+    ul {
+        padding: 0;
+        margin: 2vw 0;
+    }
+
+    ul {
+        margin-left: 5vw;
+    }
+
+    header img {
+        margin: auto 1vw;
+        width: 1vw;
+    }
+
+    .snap {
+        width: 6vw;
+    }
+
+    header nav ul li {
+        margin-right: 1vw;
+    }
+
+    .seccion {
+        margin-right: 2vw;
+    }
+
+    .btn2 {
+        border: 0.05vw solid hsl(0, 0%, 41%);
+        border-radius: 0.5vw;
+        padding: 0.4vw 0.8vw;
+        margin-left: 2vw;
+    }
+
+    main {
+        height: 100vh;
+    }
+
+    .btn3 {
+        border-radius: 0.5vw;
+        padding: 0.5vw 1vw;
+        margin-top: 3vw;
+        font-size: 1.3vw;
+    }
+
+    .btn3:hover {
+        outline: 0.05vw solid black;
+    }
+
+    .imgDown {
+        grid-template-columns: 6rem 6rem 6rem 6rem;
+        column-gap: 2vw;
+        padding: 0;
+        margin-top: 6vw;
+    }
+
+    .imgDown img {
+        width: 7vw;
+    }
+
+    .menuDesplegado ul {
+        border-radius: 0.5vw;
+        padding: 1.3vw 1.2vw;
+        row-gap: 0.9vw;
+        box-shadow: 0px 0px 15px -10px black;
+        margin-left: -2.5vw;
+    }
+
+    .menuDesplegado ul li img {
+        margin: 0 0.35vw;
+    }
+
+    
+    .content {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 90%;
+        margin-left: 5%;
+    }
+    
+}
+@media (min-width: 1000px) {
+    .attribution {
+        font-size: 1vw;
+    }
+
+    * {
+        font-size: 1.2vw;
+
+    }
+
+    body {
+        margin: 0.5vw;
+    }
+
+    header,
+    ul {
+        padding: 0;
+        margin: 2vw 0;
+    }
+    .imghero{
+        width:35vw;
+    }
+    ul {
+        margin-left: 5vw;
+    }
+
+    header img {
+        margin: auto 1vw;
+        width: 1vw;
+    }
+
+    .snap {
+        width: 6vw;
+    }
+
+    header nav ul li {
+        margin-right: 1vw;
+    }
+
+    .seccion {
+        margin-right: 2vw;
+    }
+
+    .btn2 {
+        border: 0.05vw solid hsl(0, 0%, 41%);
+        border-radius: 0.5vw;
+        padding: 0.4vw 0.8vw;
+        margin-left: 2vw;
+    }
+
+    main {
+        height: 100vh;
+    }
+
+    .btn3 {
+        border-radius: 0.5vw;
+        padding: 0.5vw 1vw;
+        margin-top: 3vw;
+        font-size: 1.3vw;
+    }
+
+    .btn3:hover {
+        outline: 0.05vw solid black;
+    }
+
+    .imgDown {
+        grid-template-columns: 6rem 6rem 6rem 6rem;
+        column-gap: 2vw;
+        padding: 0;
+        margin-top: 6vw;
+    }
+
+    .imgDown img {
+        width: 7vw;
+    }
+
+    .menuDesplegado ul {
+        border-radius: 0.5vw;
+        padding: 1.3vw 1.2vw;
+        row-gap: 0.9vw;
+        box-shadow: 0px 0px 15px -10px black;
+        margin-left: -2.5vw;
+    }
+
+    .menuDesplegado ul li img {
+        margin: 0 0.35vw;
+    }
+
+    .content {
+        height: 30vw;
+    }
+    .content {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        margin-left: 5%;
+    }
+    main div {
+        width: 50%;
+    }
+}
