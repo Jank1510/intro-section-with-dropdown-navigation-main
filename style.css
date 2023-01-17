@@ -85,22 +85,24 @@ main {
 
 
 @media (min-width: 320px) {
-    .attribution {
-        font-size: 1vw;
-    }
+   
 
     * {
-        font-size: 1.2vw;
+        font-size: 1.2rem;
 
+    } .attribution {
+        font-size: 1rem;
     }
 
     .imghero-mobile {
         display: block;
         width: 100vw;
     }
-    .imghero-desktop{
+
+    .imghero-desktop {
         display: none;
     }
+
     body {
         margin: 0;
     }
@@ -108,7 +110,7 @@ main {
     header,
     ul {
         padding: 0;
-        margin: 5rem 0;
+        margin: 1rem 0.5rem;
     }
 
     ul {
@@ -121,8 +123,7 @@ main {
     }
 
     .snap {
-        width: 18rem;
-        margin-left: 4rem;
+        width: 4rem;
     }
 
     header nav ul li {
@@ -134,10 +135,10 @@ main {
     }
 
     .btn2 {
-        border: 0.05vw solid hsl(0, 0%, 41%);
-        border-radius: 0.5vw;
-        padding: 0.4vw 0.8vw;
-        margin-left: 2vw;
+        border: 0.05rem solid hsl(0, 0%, 41%);
+        border-radius: 0.5rem;
+        padding: 0.4rem 0.8rem;
+        margin-left: 2rem;
     }
 
     main {
@@ -145,25 +146,25 @@ main {
     }
 
     .btn3 {
-        border-radius: 0.5vw;
-        padding: 0.5vw 1vw;
-        margin-top: 3vw;
-        font-size: 1.3vw;
+        border-radius: 0.5rem;
+        padding: 0.5rem 1rem;
+        margin-top: 1.5rem;
+        font-size: 1.3rem;
     }
 
     .btn3:hover {
         outline: 0.05vw solid black;
     }
 
-    .imgDown {
-        grid-template-columns: 6rem 6rem 6rem 6rem;
-        column-gap: 2vw;
+    .imgDown {grid-template-columns: 3.5rem 3.5rem 3.5rem 3.5rem;
+        column-gap: 1rem;
         padding: 0;
-        margin-top: 6vw;
+        margin-top: 3rem;
+        width: 100vw;
+        justify-content: center;
     }
 
-    .imgDown img {
-        width: 7vw;
+    .imgDown img {width: 3.5rem;
     }
 
     .menuDesplegado ul {
@@ -182,7 +183,7 @@ main {
     .content {
         display: flex;
         flex-direction: column-reverse;
-        width: 90%; 
+        width: 90%;
         justify-content: start;
     }
 
@@ -192,21 +193,31 @@ main {
 
     .menu {
         display: block;
-        width: 7rem;
+        width: 1.8rem;
         margin-left: auto;
-        margin-right: 5rem;
     }
 
 
     main div p {
         width: 100%;
-    }.txt{
-        text-align: center;
     }
-    .txt h1::first-line{
+
+    .txt {text-align: center;width: 100vw;
+        margin-top: 1rem;
+    }
+
+    .txt h1::first-line {
         display: block;
     }
-    
+
+    .txt h1 {
+        font-size: 1.5rem;
+        
+    }
+
+    .txt p {
+        font-size: 1rem;width: 90vw;margin-left: 5vw;
+    }
 }
 
 @media (min-width: 1000px) {
@@ -228,16 +239,18 @@ main {
         padding: 0;
         margin: 2vw 0;
     }
+
     .imghero-mobile {
         display: none;
     }
-    .imghero-desktop{
-        display: block;
+
+    .imghero-desktop {
+        display: initial;
         width: 35vw;
     }
-    
+
     ul {
-        margin-left: 5vw;
+        margin-left: 4vw;
     }
 
     header img {
@@ -246,7 +259,7 @@ main {
     }
 
     .snap {
-        margin-left: 0rem;
+        margin-left: 2rem;
         width: 6vw;
     }
 
@@ -255,7 +268,8 @@ main {
     }
 
     .seccion {
-        margin-right: 2vw;
+        margin-right: 2vw;display: flex;
+        align-items: center;
     }
 
     .btn2 {
@@ -265,11 +279,7 @@ main {
         margin-left: 2vw;
     }
 
-
-    main div p {
-        width: 80%;
-    }
-    
+ 
     main {
         height: 100vh;
     }
@@ -290,6 +300,8 @@ main {
         column-gap: 2vw;
         padding: 0;
         margin-top: 6vw;
+        justify-content: end;
+        width: fit-content;
     }
 
     .imgDown img {
@@ -318,11 +330,7 @@ main {
         width: 90%;
         margin-left: 5%;
     }
-
-    main div {
-        width: 50%;
-    }
-
+ 
     nav {
         width: 100%;
         display: flex;
@@ -331,7 +339,23 @@ main {
 
     .menu {
         display: none
-    }.txt{
-        text-align: start;
     }
+
+    .txt {
+        text-align: start; 
+        margin-top: 0rem; width: 50%;margin-left: 5vw;
+    }
+
+    .txt p {
+        font-size: 1.3vw;
+        width: 80%;margin-left: 0;
+    }
+
+    .txt h1 {font-size: 5.1vw;
+        width: 87%;
+    }
+    .imgdiv{
+        width: 50%;text-align: center;
+    }
+
 }
