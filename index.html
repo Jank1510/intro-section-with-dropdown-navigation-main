@@ -15,14 +15,14 @@
   <!--Cabecera de la pagina-->
   <header>
     <img class="snap" src="./images/logo.svg" alt="Logo" />
-    <nav>
+    <nav id="nav">
       <ul class="colortxt">
         <li onclick="menuDesplegable1()">
           <span>Features</span>
-          <img style="margin: 0" src="./images/icon-arrow-up.svg" alt="arrow" />
+          <img style="margin: 0" id="imgDesple1" src="./images/icon-arrow-down.svg" alt="arrow" />
           <!--seccion desplegable en los menus-->
           <div class="menuDesplegado" id="menudesplegable1">
-            <ul style="margin-left: -4.5rem;">
+            <ul >
               <li><img src="./images/icon-todo.svg" alt="list"> <span>Todo List</span></li>
               <li><img src="./images/icon-calendar.svg" alt="calendar"> <span>Calendar</span></li>
               <li><img src="./images/icon-reminders.svg" alt="reminders"> <span>Reminders</span></li>
@@ -32,10 +32,10 @@
         </li>
         <li onclick="menuDesplegable2()">
           <span>Company</span>
-          <img style="margin: 0" src="./images/icon-arrow-up.svg" alt="arrow" />
+          <img style="margin: 0" id="imgDesple2" src="./images/icon-arrow-down.svg" alt="arrow" />
           <!--seccion desplegable en los menus-->
           <div class="menuDesplegado" id="menudesplegable2">
-            <ul style="margin-left: 0rem;">
+            <ul  >
               <li><span>History</span> </li>
               <li><span>Our Team</span></li>
               <li><span>Blog</span></li>
@@ -50,7 +50,7 @@
         <button class="btn2 colortxt">Register</button>
       </div>
     </nav>
-    <img class="menu" src="./images/icon-menu.svg" alt="menu">
+    <img onclick="openClose()" class="menu" id="menu" src="./images/icon-menu.svg" alt="menu">
   </header>
   <main>
     <div class="content">

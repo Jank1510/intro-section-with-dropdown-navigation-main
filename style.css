@@ -71,7 +71,6 @@ main {
 .menuDesplegado ul {
     display: flex;
     flex-direction: column;
-    position: absolute;
     background: white;
     z-index: 2;
 }
@@ -85,12 +84,14 @@ main {
 
 
 @media (min-width: 320px) {
-   
+
 
     * {
         font-size: 1.2rem;
 
-    } .attribution {
+    }
+
+    .attribution {
         font-size: 1rem;
     }
 
@@ -114,12 +115,16 @@ main {
     }
 
     ul {
-        margin-left: 5vw;
+        margin-left: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        margin-top: 5rem;
+        row-gap: 1rem;
     }
 
     header img {
         margin: auto 1vw;
-        width: 1vw;
+        width: 0.8rem;
     }
 
     .snap {
@@ -131,14 +136,19 @@ main {
     }
 
     .seccion {
-        margin-right: 2vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        margin-top: 0px;
+        margin-top: 2rem;
+        row-gap: 1rem;
     }
 
     .btn2 {
         border: 0.05rem solid hsl(0, 0%, 41%);
         border-radius: 0.5rem;
-        padding: 0.4rem 0.8rem;
-        margin-left: 2rem;
+        padding: 0.4rem 3rem;
     }
 
     main {
@@ -156,7 +166,8 @@ main {
         outline: 0.05vw solid black;
     }
 
-    .imgDown {grid-template-columns: 3.5rem 3.5rem 3.5rem 3.5rem;
+    .imgDown {
+        grid-template-columns: 3.5rem 3.5rem 3.5rem 3.5rem;
         column-gap: 1rem;
         padding: 0;
         margin-top: 3rem;
@@ -164,15 +175,18 @@ main {
         justify-content: center;
     }
 
-    .imgDown img {width: 3.5rem;
+    .imgDown img {
+        width: 3.5rem;
     }
 
     .menuDesplegado ul {
         border-radius: 0.5vw;
-        padding: 1.3vw 1.2vw;
         row-gap: 0.9vw;
-        box-shadow: 0px 0px 15px -10px black;
-        margin-left: -2.5vw;
+        position: relative;
+        margin: 0;
+        margin-top: 0.5rem;
+        margin-left: 1rem;
+        row-gap: 0.7rem;
     }
 
     .menuDesplegado ul li img {
@@ -189,12 +203,22 @@ main {
 
     nav {
         display: none;
+        flex-direction: column;
+        position: absolute;
+        background: white;
+        height: 100vh;
+        right: 0;
+        top: 0;
+        width: 60vw;
+        box-shadow: 0rem 0rem 0rem 100rem #000000ad;
     }
 
     .menu {
         display: block;
         width: 1.8rem;
         margin-left: auto;
+        z-index: 2;
+        cursor: pointer;
     }
 
 
@@ -202,7 +226,9 @@ main {
         width: 100%;
     }
 
-    .txt {text-align: center;width: 100vw;
+    .txt {
+        text-align: center;
+        width: 100vw;
         margin-top: 1rem;
     }
 
@@ -212,11 +238,13 @@ main {
 
     .txt h1 {
         font-size: 1.5rem;
-        
+
     }
 
     .txt p {
-        font-size: 1rem;width: 90vw;margin-left: 5vw;
+        font-size: 1rem;
+        width: 90vw;
+        margin-left: 5vw;
     }
 }
 
@@ -251,6 +279,7 @@ main {
 
     ul {
         margin-left: 4vw;
+        flex-direction: row;
     }
 
     header img {
@@ -268,8 +297,14 @@ main {
     }
 
     .seccion {
-        margin-right: 2vw;display: flex;
+        display: flex;
         align-items: center;
+        flex-direction: row;
+        margin: 0;
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-left: auto;
+        margin-right: 1.5vw;
     }
 
     .btn2 {
@@ -279,7 +314,7 @@ main {
         margin-left: 2vw;
     }
 
- 
+
     main {
         height: 100vh;
     }
@@ -299,7 +334,7 @@ main {
         grid-template-columns: 6rem 6rem 6rem 6rem;
         column-gap: 2vw;
         padding: 0;
-        margin-top: 6vw;
+        margin-top: 8vw;
         justify-content: end;
         width: fit-content;
     }
@@ -313,7 +348,8 @@ main {
         padding: 1.3vw 1.2vw;
         row-gap: 0.9vw;
         box-shadow: 0px 0px 15px -10px black;
-        margin-left: -2.5vw;
+        position: absolute;
+        margin-left: -4.5rem;
     }
 
     .menuDesplegado ul li img {
@@ -330,11 +366,15 @@ main {
         width: 90%;
         margin-left: 5%;
     }
- 
+
     nav {
         width: 100%;
         display: flex;
+
         flex-direction: row;
+        position: relative;
+        height: auto;
+        box-shadow: none;
     }
 
     .menu {
@@ -342,20 +382,29 @@ main {
     }
 
     .txt {
-        text-align: start; 
-        margin-top: 0rem; width: 50%;margin-left: 5vw;
+        text-align: start;
+        margin-top: 0rem;
+        width: 50%;
+        margin-left: 5vw;
     }
 
     .txt p {
         font-size: 1.3vw;
-        width: 80%;margin-left: 0;
+        width: 80%;
+        margin-left: 0;
     }
 
-    .txt h1 {font-size: 5.1vw;
+    .txt h1 {
+        font-size: 5.1vw;
         width: 87%;
     }
-    .imgdiv{
-        width: 50%;text-align: center;
+
+    .imgdiv {
+        width: 50%;
+        text-align: center;
     }
 
+    #menudesplegable2 ul {
+        margin-left: 0rem;
+    }
 }
