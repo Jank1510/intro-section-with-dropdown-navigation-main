@@ -1,0 +1,161 @@
+/*desktop design*/
+@media (min-width: 1000px) {
+    .attribution {
+        font-size: 1vw;
+    }
+
+    * {
+        font-size: 1.2vw;
+
+    }
+
+    body {
+        margin: 0.5vw;
+    }
+
+    header,
+    ul {
+        padding: 0;
+        margin: 2vw 0;
+    }
+
+    .imghero-mobile {
+        display: none;
+    }
+
+    .imghero-desktop {
+        display: initial;
+        width: 35vw;
+    }
+
+    ul {
+        margin-left: 4vw;
+        flex-direction: row;
+    }
+
+    header img {
+        margin: auto 1vw;
+        width: 1vw;
+    }
+
+    .snap {
+        margin-left: 2rem;
+        width: 6vw;
+    }
+
+    header nav ul li {
+        margin-right: 1vw;
+    }
+
+    .seccion {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        margin: 0;
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-left: auto;
+        margin-right: 1.5vw;
+    }
+
+    .btn2 {
+        border: 0.05vw solid hsl(0, 0%, 41%);
+        border-radius: 0.5vw;
+        padding: 0.4vw 0.8vw;
+        margin-left: 2vw;
+    }
+
+
+    main {
+        height: 100vh;
+    }
+
+    .btn3 {
+        border-radius: 0.5vw;
+        padding: 0.5vw 1vw;
+        margin-top: 3vw;
+        font-size: 1.3vw;
+    }
+
+    .btn3:hover {
+        outline: 0.05vw solid black;
+    }
+
+    .imgDown {
+        grid-template-columns: 6rem 6rem 6rem 6rem;
+        column-gap: 2vw;
+        padding: 0;
+        margin-top: 8vw;
+        justify-content: end;
+        width: fit-content;
+    }
+
+    .imgDown img {
+        width: 7vw;
+    }
+
+    .menuDesplegado ul {
+        border-radius: 0.5vw;
+        padding: 1.3vw 1.2vw;
+        row-gap: 0.9vw;
+        box-shadow: 0px 0px 15px -10px black;
+        position: absolute;
+        margin-left: -4.5rem;
+    }
+
+    .menuDesplegado ul li img {
+        margin: 0 0.35vw;
+    }
+
+    .content {
+        height: 30vw;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+
+        flex-direction: row;
+        position: relative;
+        height: auto;
+        box-shadow: none;
+    }
+
+    .menu {
+        display: none
+    }
+
+    .txt {
+        text-align: start;
+        margin-top: 0rem;
+        width: 50%;
+        margin-left: 5vw;
+    }
+
+    .txt p {
+        font-size: 1.3vw;
+        width: 80%;
+        margin-left: 0;
+    }
+
+    .txt h1 {
+        font-size: 5.1vw;
+        width: 87%;
+    }
+
+    .imgdiv {
+        width: 50%;
+        text-align: center;
+    }
+
+    #menudesplegable2 ul {
+        margin-left: 0rem;
+    }
+}

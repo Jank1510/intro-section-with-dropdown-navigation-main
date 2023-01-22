@@ -1,0 +1,18 @@
+/*animation design*/
+
+@keyframes openAnimation {
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+.menuDesplegado{
+    animation-duration: 0.7s;
+    animation-name: openAnimation;
+} 
+nav{
+    animation-duration: 0.7s;
+    animation-name: openAnimation;
+} 

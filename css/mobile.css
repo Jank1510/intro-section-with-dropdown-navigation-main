@@ -1,0 +1,165 @@
+/*mobile design*/
+@media (min-width: 320px) {
+
+
+    * {
+        font-size: 1.2rem;
+
+    }
+
+    .attribution {
+        font-size: 1rem;
+    }
+
+    .imghero-mobile {
+        display: block;
+        width: 100vw;
+    }
+
+    .imghero-desktop {
+        display: none;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    header,
+    ul {
+        padding: 0;
+        margin: 1rem 0.5rem;
+    }
+
+    ul {
+        margin-left: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        margin-top: 5rem;
+        row-gap: 1rem;
+    }
+
+    header img {
+        margin: auto 1vw;
+        width: 0.8rem;
+    }
+
+    .snap {
+        width: 4rem;
+    }
+
+    header nav ul li {
+        margin-right: 1vw;
+    }
+
+    .seccion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        margin-top: 0px;
+        margin-top: 2rem;
+        row-gap: 1rem;
+    }
+
+    .btn2 {
+        border: 0.05rem solid hsl(0, 0%, 41%);
+        border-radius: 0.5rem;
+        padding: 0.4rem 3rem;
+    }
+
+    main {
+        height: 100vh;
+    }
+
+    .btn3 {
+        border-radius: 0.5rem;
+        padding: 0.5rem 1rem;
+        margin-top: 1.5rem;
+        font-size: 1.3rem;
+    }
+
+    .btn3:hover {
+        outline: 0.05vw solid black;
+    }
+
+    .imgDown {
+        grid-template-columns: 3.5rem 3.5rem 3.5rem 3.5rem;
+        column-gap: 1rem;
+        padding: 0;
+        margin-top: 3rem;
+        width: 100vw;
+        justify-content: center;
+    }
+
+    .imgDown img {
+        width: 3.5rem;
+    }
+
+    .menuDesplegado ul {
+        border-radius: 0.5vw;
+        row-gap: 0.9vw;
+        position: relative;
+        margin: 0;
+        margin-top: 0.5rem;
+        margin-left: 1rem;
+        row-gap: 0.7rem;
+    }
+
+    .menuDesplegado ul li img {
+        margin: 0 0.35vw;
+    }
+
+
+    .content {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 90%;
+        justify-content: start;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background: white;
+        height: 100vh;
+        right: 0;
+        top: 0;
+        width: 60vw;
+        box-shadow: 0rem 0rem 0rem 100rem #000000ad;
+    }
+
+    .menu {
+        display: block;
+        width: 1.8rem;
+        margin-left: auto;
+        z-index: 2;
+        cursor: pointer;
+    }
+
+
+    main div p {
+        width: 100%;
+    }
+
+    .txt {
+        text-align: center;
+        width: 100vw;
+        margin-top: 1rem;
+    }
+
+    .txt h1::first-line {
+        display: block;
+    }
+
+    .txt h1 {
+        font-size: 1.5rem;
+
+    }
+
+    .txt p {
+        font-size: 1rem;
+        width: 90vw;
+        margin-left: 5vw;
+    }
+}

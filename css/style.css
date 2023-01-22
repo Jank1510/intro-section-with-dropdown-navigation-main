@@ -1,0 +1,77 @@
+/*main design*/
+
+.attribution {
+    text-align: center;
+}
+  
+header,
+ul,
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li span:hover {
+    cursor: pointer;
+    color: hsl(0, 0%, 8%);
+}
+
+.seccion {
+    margin-left: auto;
+}
+
+.btn1,
+.btn2  {
+    background: none;
+    border: none;
+}
+ 
+
+.seccion button:hover {
+    color: hsl(0, 0%, 8%);
+    cursor: pointer;
+    border-color: hsl(0, 0%, 8%);
+}
+ 
+
+.btn3 {
+    background: black;
+    border: none;
+    color: white;
+}
+
+.btn3:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.imgDown {
+    display: grid;
+}
+
+
+.colortxt {
+    color: hsl(0, 0%, 41%);
+}
+
+.menuDesplegado ul {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    z-index: 2;
+}
+
+
+#menudesplegable1,
+#menudesplegable2 {
+    display: none;
+}
+
+
+
