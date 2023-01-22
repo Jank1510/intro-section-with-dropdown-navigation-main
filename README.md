@@ -1,20 +1,3 @@
-<<<<<<< HEAD
-# intro-section-with-dropdown-navigation-main
-
-intro-section-with-dropdown-navigation-main CHALLENGE finalizado ☑
-
-# Project Link :
-https://jank1510.github.io/intro-section-with-dropdown-navigation-main/
-
-# Preview Image:
-<p align='center'> 
-  
-  <img src="https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_900/Screenshots/qli3kybsxpmw6i3qtfkc.jpg" alt="figma"/>
-
-</p>
-
-
-=======
 # Intro section with dropdown navigation ☑ 
   
 <p align='center'> 
@@ -35,4 +18,3 @@ https://jank1510.github.io/intro-section-with-dropdown-navigation-main/
 
 **To do this challenge, you need a basic understanding of HTML CSS and JavaScript.**
  
->>>>>>> fbe1215 (update)
